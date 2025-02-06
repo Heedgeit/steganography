@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 import numpy as np
 import io
-tab_1, tab_2,tab_3 = st.tabs(['Process Steganography','Encode Output','Decode Output'])
+#tab_1, tab_2,tab_3 = st.tabs(['Process Steganography','Encode Output','Decode Output'])
 
 
 def encode(image, message):
@@ -85,7 +85,7 @@ def binary_to_string(binary_message):
     return message
 
 def main():
-    st.title("Steganography Tool")
+    st.title("Steganography Encoding, P3 hub project with python")
     
     option = st.sidebar.selectbox("Choose the action", ('Encode', 'Decode'))
     
